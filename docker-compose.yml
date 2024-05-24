@@ -1,0 +1,9 @@
+services:
+  expense-categorizer:
+    build: .
+    ports:
+      - "3434:3434"
+    environment:
+      FLASK_ENV: production
+    volumes:
+      - .:/app
